@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.jboss.bakery</groupId>
+        <artifactId>brownie</artifactId>
+        <version>123.4567.891011</version>
+    </parent>
+    <artifactId>brownie-ear</artifactId>
+    <packaging>ear</packaging>
+
+    <name>Brownie - ear</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jboss.bakery</groupId>
+            <artifactId>brownie-web</artifactId>
+            <type>war</type>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.bakery</groupId>
+            <artifactId>brownie-lib</artifactId>
+            <type>ejb</type>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.parent.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-ear-plugin</artifactId>
+                <version>${version.ear.plugin}</version>
+                <configuration>
+                    <!-- Tell Maven we are using Java EE -->
+                    <version>5</version>
+                    <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    <modules>
+                    </modules>
+                    <fileNameMapping>no-version</fileNameMapping>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
