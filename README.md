@@ -1,5 +1,5 @@
-brownie-ear: Brownie, the brown field application
-=================================================
+Brownie, the brown field application
+====================================
 
 What is it?
 -----------
