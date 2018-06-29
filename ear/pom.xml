@@ -125,7 +125,7 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>opensymphony</groupId>
+            <groupId>org.opensymphony.quartz</groupId>
             <artifactId>quartz</artifactId>
             <scope>compile</scope>
         </dependency>
