@@ -313,7 +313,7 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-web</artifactId>
-                <version>3.2.11.RELEASE</version>
+                <version>5.2.15.RELEASE</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
